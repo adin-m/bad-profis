@@ -57,7 +57,7 @@ body {
 }
 
 #header .header-container {
-		height: 113px;
+		height: 53px;
 }
 
 #header .header-top {
@@ -91,7 +91,7 @@ body {
 * Page Header
 */
 .custom-page-header.page-header-background-sm {
-		padding: 95px 0 !important;
+		padding: header-container container-fluid bg-secondary px-0px 0 !important;
 }
 
 .custom-page-header .parallax-background {
