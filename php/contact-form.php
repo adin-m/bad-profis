@@ -61,8 +61,8 @@ try {
 		$mail->SMTPAuth = true;
 		$mail->Username = 'adinmulagic@gmail.com';
 		$mail->Password = 'pxbb yyke emks dxlk';
-		$mail->SMTPSecure = 'ssl'; 
-		$mail->Port = 465;
+		$mail->SMTPSecure = 'tls'; 
+		$mail->Port = 587;
 
 	$mail->AddAddress($email);	 						       // Add another recipient
 
