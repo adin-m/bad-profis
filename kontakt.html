@@ -503,36 +503,7 @@
 		<!-- Examples -->
 		<script src="js/examples/examples.gallery.js"></script>
 
-		<script>
-  const handleSubmit = (event) => {
-    event.preventDefault();
-
-    const myForm = event.target;
-    const formData = new FormData(myForm);
-    
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData).toString(),
-    })
-      .then(() => {
-        // Show your Porto "Erfolg" message
-        const successMsg = document.querySelector(".contact-form-success");
-        successMsg.classList.remove("d-none");
-        
-        // Clear the form fields
-        myForm.reset();
-      })
-      .catch((error) => {
-        // Show your Porto "Fehler" message
-        const errorMsg = document.querySelector(".contact-form-error");
-        errorMsg.classList.remove("d-none");
-        console.error(error);
-      });
-  };
-
-  document.querySelector("form[name='contact']").addEventListener("submit", handleSubmit);
-</script>
+		
 
 	</body>
 
