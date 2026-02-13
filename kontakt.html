@@ -206,7 +206,11 @@
 								Ihre Daten werden vertraulich behandelt und nur zur Bearbeitung Ihrer Anfrage verwendet.
 							</p>
 
-							<form class="contact-form custom-form-style-1" action="php/contact-form.php" method="POST">
+							<form class="contact-form custom-form-style-1" name="contact" method="POST" data-netlify="true">
+    
+						    <!-- This hidden input is required for Netlify to identify the form name -->
+						    <input type="hidden" name="form-name" value="contact" />
+						    
 								<div class="contact-form-success alert alert-success d-none mt-4">
 									<strong>Erfolg!</strong> Ihre Nachricht ist bei uns eingegangen.
 								</div>
@@ -242,7 +246,9 @@
 								</div>
 								<div class="row">
 									<div class="form-group col">
-										<input type="submit" value="NACHRICHT SENDEN" class="btn btn-outline btn-primary rounded-0 py-3 px-5 font-weight-semibold" data-loading-text="Laden...">
+										 <button type="submit" class="btn btn-outline btn-primary rounded-0 py-3 px-5 font-weight-semibold">
+						                NACHRICHT SENDEN
+						            </button>
 									</div>
 								</div>
 							</form>
